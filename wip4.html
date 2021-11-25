@@ -14,28 +14,38 @@
   <link rel="stylesheet" href="w3.css"/>
 
    <script>
-        var slideIndex = 1;
-        
+        var slideIndex = new Map();
 
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
+        function plusDivs(element, n) {
+          slideIndex.set(element.id, slideIndex.get(element.id)+n);
+          showDivs(element, slideIndex.get(element.id));
         }
 
-        function showDivs(n) {
+        function showDivs(element, n) {
           var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
+          var x = element.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex.set(element.id, 1);}
+          if (n < 1) {slideIndex.set(element.id, x.length);}
           for (i = 0; i < x.length; i++) {
              x[i].style.display = "none";  
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex.get(element.id)-1].style.display = "block";  
+        }
+
+        function onLoad() {
+          var x = document.getElementsByClassName("product-carousel");
+          for (var i = 0; i < x.length; ++i) {
+            let new_id = "carousel-" + i;
+            x[i].setAttribute("id", new_id);
+            slideIndex.set(x[i].id, 0);
+            showDivs(x[i], slideIndex.get(x[i].id));
+          }
         }
     </script>
 
 </head>
 
-<body onload="showDivs(slideIndex);">
+<body onload="onLoad();">
 <!-- Navigation Bar -->
 <!-- <div class=stiky>
   
@@ -63,7 +73,7 @@
         <div class="contacts-icon">
             <a href="https://www.facebook.com/groups/235170301483240" target="_blank"><img src="IMG/Icons/fb.svg" alt="Facebook" class="icon-link" style="width:30px;height:30px;"/></a>
         </div>
-        <div class="contacts-icon">
+        <div class="conta cts-icon">
             <a href="https://www.instagram.com/kraina_liter_/" target="_blank"><img src="IMG/Icons/inst.svg" alt="Instagram" class="icon-link" style="width:30px;height:30px;"/></a>
         </div>
         <div class="contacts-icon">
@@ -136,8 +146,8 @@
         </div> -->
       </div>
 
-  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(this.parentNode, -1)">&#10094;</button>
+  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(this.parentNode, 1)">&#10095;</button>
 
   </div>
 
@@ -202,8 +212,8 @@
         </div> -->
       </div>
 
-  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(this.parentNode, -1)">&#10094;</button>
+  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(this.parentNode, 1)">&#10095;</button>
 
   </div>
 
@@ -263,8 +273,8 @@
         </div> -->
       </div>
 
-  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(this.parentNode, -1)">&#10094;</button>
+  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(this.parentNode, 1)">&#10095;</button>
 
   </div>
 
@@ -302,10 +312,10 @@
         </div> -->
       </div>
 
-  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(this.parentNode, -1)">&#10094;</button>
+  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(this.parentNode, 1)">&#10095;</button>
 
-  </div>
+</div>
 
              
     <div class="book-product-text">
