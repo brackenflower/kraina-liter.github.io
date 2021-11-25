@@ -305,7 +305,7 @@ p, ul {
 	text-align: left;
 	max-width: 50vw;
 	/*flex-basis: 1;*/
-	/*min-width: 30em;*/
+	min-width: 50vw;
 }
 
 .book-product-image {
