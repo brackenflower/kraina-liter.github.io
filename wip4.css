@@ -617,9 +617,9 @@ p, ul {
     scrollbar-width: none;  /* Firefox */
 }
 
-.scrolled-feedback::-webkit-scrollbar {
+/*.scrolled-feedback::-webkit-scrollbar {
     display: none;
-}
+}*/
 
 .feedback {
 	width: 250px; 
