@@ -185,10 +185,10 @@ p, ul {
 
 
 .intro-image {
-  background-image: url("IMG/INTRO-image.jpg");
+  background-image: url("IMG/INTRO-image-GAME-sait.jpg");
   /*background-color: #cccccc;*/
   display: flex;
-  height: 850px;
+  height: 700px;
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -202,15 +202,15 @@ p, ul {
 /*	top: 10%;
 	left: 30%;
 	transform: translate(-50%, 0%);*/
-	padding-top: 10em;
-	padding-left: 8em;
+	padding-top: 7em;
+	padding-left: 6em;
 	/*width: 500px;*/
 	/*height: 500px;*/
 	/*margin-left: 5%;*/
 	/*margin-top: 150px;*/
 	min-width: 20em;
 	/*min-height: 600px;*/
-	width: 30em;
+	width: 35em;
 	/*max-width: 32%;*/
 	color: black;
 	/*background-color: lightblue;*/
@@ -457,7 +457,7 @@ p, ul {
 .game-window-image {
 	height: 300px;
 	background-color: white; 
-	background-image: url('IMG/Forzac&Narzac-2-s.jpg'); 
+	background-image: url('IMG/Forzac&Narzac-2-ss.jpg'); 
 	background-repeat: no-repeat;
 	background-attachment: fixed;  
 	background-size: cover;
@@ -864,4 +864,17 @@ p, ul {
 	max-height: unset;
 }
 
+.intro-image {
+  background-image: url("IMG/INTRO-image-GAME-sait-smal.jpg");
+
 }  
+
+.intro-text {
+	text-align: center;
+	color: white;
+	padding-top: 20vw;
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+}
