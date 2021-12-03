@@ -1,0 +1,170 @@
+.roof {
+	/*position: -webkit-sticky;*/
+	position: sticky;
+  	top: 0;
+  	display: flex;
+  	z-index: 3;
+    background-color: #b300b3;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.navbar {
+  display: flex;
+  background-color: #blue;
+}
+
+/*.navbar div {
+	display: flex;*/
+	
+}
+
+/* Style the navigation bar links */
+/*.navbar a {
+  color: white;
+  padding: 16px 16px;
+  text-align: center;
+  text-decoration: none;
+}*/
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #33cccc;
+  text-shadow: 1.5px 1px 12px #000099;
+}
+
+.contacts {
+	display: flex;
+	align-items: center;
+	/*flex-direction: column;*/
+  	text-align: center;
+ 	background: #b300b3;
+ 	color: white;
+ }
+
+.contacts-phone {
+	/*background-color: green;*/
+	color: white; 
+	font-variant-numeric: oldstyle-nums;
+	line-height: 80%;
+	letter-spacing: 2px;
+	margin: 0em 0em 0em 0em;
+	padding: 13px 16px 16px 16px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+
+.contacts-heshteg-link {
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	margin: 0em 0em 0em 0em;
+	padding: 17px 16px 16px 16px;
+	display: none;
+}
+
+.contacts-heshteg-link:hover {
+	filter: drop-shadow( 1px 1px 5px rgba(0, 0, 0, .7));
+}
+
+.contacts-icon img {
+	margin-left: 4px;
+	margin-right: 10px;
+	width: 30px;
+  	height: 30px;
+  	/*top: 50%;*/
+  	/*align-self: center;*/
+}
+
+.cicons {
+	/*display: flex;
+	flex-direction: row;*/
+	/*justify-content: center;*/
+	/*padding: 17px 16px 16px 16px;*/
+}
+
+/*.navbar-icons > div {
+	text-align: center;
+	background-color: lightgreen;
+	margin: 0px 10px 0px 10px;
+}*/
+
+.icon-link:hover {
+	filter: drop-shadow( 1px 1px 5px rgba(0, 0, 0, .7));
+		
+}
+
+.default-link {
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	padding: 16px 16px;
+	white-space: nowrap;
+	/*margin: 0.5em 0em 0.2em 0em;*/
+}
+
+.default-link:hover {
+    background-color: #33cccc;
+    text-shadow: 1.5px 1px 12px #000099;
+}
+
+@font-face {
+	font-family: MetaPro-Medium; 
+	src: url('Fonts/MetaPro-Medium.otf');
+}
+@font-face {
+	font-family: MetaPro-Normal; 
+	src: url('Fonts/MetaPro-Normal.otf');
+}
+
+@font-face {
+	font-family: MetaPro-NormalItalic; 
+	src: url('Fonts/MetaPro-NormalItalic.otf');
+}
+
+/*, Tachoma, Arial, sans-serif*/
+
+
+body {
+	font-size: 100%;
+	/*font-family: Fira Sans Condensed, sans-serif;*/
+	font-size: 17px;
+	margin: 0px;
+}
+
+/*html, body {
+  overflow-x: hidden;
+}*/
+
+/*body {
+  position: relative;
+}*/
+
+a {
+	font-family: MetaPro-Normal
+}
+
+h1 {
+	font-family: "MetaPro-Medium", sans-serif;
+	font-size: 60px;
+	/*font-weight: 900;*/
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-family: "MetaPro-Medium", sans-serif;
+	font-size: 40px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	letter-spacing: 1px;
+}
+p, ul {
+	font-family: "Fira Sans Condensed", sans-serif;
+	font-variant-numeric: lining-nums;
+	line-height: 1.4;
+	letter-spacing: 0px;
+
+}
