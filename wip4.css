@@ -877,4 +877,10 @@ p, ul {
 	padding-right: 10vw;
 }
 
+#content {
+    border: 1px solid red;
+    height: 1em;
+    padding: 2px;
+    overflow: hidden    
+}
 }
