@@ -819,9 +819,16 @@ p, ul, ol {
     /*border: 1px solid red;*/
     background-color: white;
     height: 5em;
-    padding: 1px;
+    /*padding: 1px;*/
     overflow: hidden    
 }
+
+.free-presentations {
+	/*color: teal;
+	font-weight: bold;
+	letter-spacing: 1px;*/
+	background-color: lemonchiffon ;
+}#f2f9f9
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
