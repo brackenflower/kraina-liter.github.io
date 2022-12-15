@@ -814,6 +814,15 @@ p, ul {
 	filter: drop-shadow( 1px 1px 5px rgba(0, 0, 0, .7));
 }
 
+
+#presentationDropDown {
+    /*border: 1px solid red;*/
+    background-color: white;
+    height: 5em;
+    padding: 1px;
+    overflow: hidden    
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
 	.roof {
@@ -877,10 +886,6 @@ p, ul {
 	padding-right: 10vw;
 }
 
-#content {
-    border: 1px solid red;
-    height: 1em;
-    padding: 2px;
-    overflow: hidden    
+
 }
-}
+
