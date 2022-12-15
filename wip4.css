@@ -173,7 +173,7 @@ h2 {
 	letter-spacing: 1px;
 }
 
-p, ul {
+p, ul, ol {
 	font-family: "Fira Sans Condensed", sans-serif;
 	font-variant-numeric: lining-nums;
 	line-height: 1.4;
